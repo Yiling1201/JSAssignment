@@ -60,15 +60,4 @@ console.log(convertNumber(1));
 console.log(convertNumber(2));
 
 
-function evatuateresult(firstNumber,secondNumber) {
-if (firstNumber === secondNumber) {
-  return "Numbers are equal!";
-}
-else if (firstNumber>secondNumber){
-  return "First numbers is greater than second number!";
-  }
-else if (secondNumber<firstNumber){
-return "Second number is greater than first number!";}
-}
-}
-console.log(evatuateresult(1234,2345));
+
