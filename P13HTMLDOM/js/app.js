@@ -1,7 +1,7 @@
 
     const text = document.getElementById("text");
-    text.innerHTML = "Elaine"; // 替換為你的名字
-    text.style.color = "blue"; // 替換為你最喜歡的顏色
+    text.innerHTML = "Elaine"; // 名字
+    text.style.color = "blue"; // 顏色
 
 
     // 宣告一個變數來儲存分數
