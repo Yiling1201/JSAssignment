@@ -1,16 +1,36 @@
-//route
+//Document Elements
+//looks for "text0". Assigns that to the variable called textField0.
 const textField0 = document.getElementById("text0");
-textField0.innerHTML = showStylizedScore(786);
 
+//Buttons
+const increaseScorebutton = document.getElementById("button0");
 
+//Internal Variables
+let score= 0;
 
-function showScore (inputNumber) {
- return inputNumber * 100;//output is a  number
+//Process
+increaseScorebutton.addEventListener("click", function(){
+  increaseScoreByOne();
+  updateScoreText();
+  checkScoreForSeven();
+})
+
+//controllers
+function increaseScoreByOne () {
+  score++;
 }
 
-function showStylizedScore (scoreInput) {
-  return "Your Score is" + scoreInput * 100;
-
+function checkScoreForSeven() {
+  if (score >=7){
+   changeScoreTextColorToGreen();
+  }
 }
 
+//View
+function updateScoreText () {
+  textField0.innerHTML = "Your score is: " + score;
+}
 
+function changeScoreTextColorToGreen () {
+  textField0.style.color= "green";
+}
