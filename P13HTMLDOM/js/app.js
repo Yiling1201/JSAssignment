@@ -1,5 +1,5 @@
 
-    const text = document.getElementById("text");
+    const text = document.getElementById("text0");
     text.innerHTML = "Elaine"; // 名字
     text.style.color = "blue"; // 顏色
 
